@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="rootViewController" customModule="TextXib" customModuleProvider="target">
+            <connections>
+                <outlet property="ButtonView" destination="28v-oD-oMY" id="cb7-Ok-JJY"/>
+                <outlet property="LableView" destination="GHt-cp-kB9" id="RIi-ip-dc4"/>
+                <outlet property="TextFieldView" destination="p8W-P4-EvP" id="SAg-Zr-PLk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-cp-kB9">
+                    <rect key="frame" x="163" y="380.66666666666669" width="102" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="label View"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-P4-EvP">
+                    <rect key="frame" x="145" y="445.66666666666669" width="138" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Text Field View"/>
+                </button>
+                <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JBj-R3-21L">
+                    <rect key="frame" x="-0.97218441388338306" y="131.5" width="319.99999999999983" height="1.5000000000000568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28v-oD-oMY">
+                    <rect key="frame" x="156" y="315.66666666666669" width="116" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button View"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X6-Aq-sg7">
+                    <rect key="frame" x="172" y="515" width="86" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="ApiView"/>
+                    <connections>
+                        <action selector="ApiTabView:" destination="-1" eventType="touchUpInside" id="pu8-hq-qCW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="p8W-P4-EvP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3ho-pu-HGa"/>
+                <constraint firstItem="GHt-cp-kB9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="70Y-JJ-8P2"/>
+                <constraint firstItem="GHt-cp-kB9" firstAttribute="top" secondItem="28v-oD-oMY" secondAttribute="bottom" constant="30" id="G2z-OR-yZX"/>
+                <constraint firstItem="p8W-P4-EvP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LsO-ig-wJc"/>
+                <constraint firstItem="28v-oD-oMY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a9v-IF-dUU"/>
+                <constraint firstItem="p8W-P4-EvP" firstAttribute="top" secondItem="GHt-cp-kB9" secondAttribute="bottom" constant="30" id="cpq-ym-xpE"/>
+                <constraint firstItem="28v-oD-oMY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lVF-2C-i6k"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
